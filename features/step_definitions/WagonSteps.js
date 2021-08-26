@@ -14,11 +14,9 @@ let triedToComeAboard = {};
 Given('a capacidade da carroça igual a {int}', function (int) {
     carroca.capacity = int;
 });
-
 Given('a carroça sempre iniciando vazia', function () {
     carroca.passengers = [];
 });
-
 Given('o passageiro de nome <name> que está com saúde <isHealthy> e tem <food> refeições', function (dataTable) {
     let data = dataTable.hashes();
 
@@ -84,8 +82,3 @@ Then('ele deverá ser adicionada à lista de passageiros', function () {
 Then('devo responder que a quantidade de assentos disponíveis é {int}', function (int) {
     assert.strictEqual(availableSeat, int);
 });
-
-
-
-
-
